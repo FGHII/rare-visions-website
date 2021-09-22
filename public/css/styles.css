@@ -1,13 +1,14 @@
 h1 {
     text-align: center;
     color: white;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
 }
 
 h2 {
     text-align: center;
     color: white;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
@@ -25,6 +26,32 @@ i {
 .welcome-container {
     background-color: blue;
     padding: 50px 0px;
+}
+
+.contact-link-container {
+    margin-top: 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+a:hover {
+    color: red;
+}
+a > i:hover {
+    color: red;
+}
+.contact-link {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .socials-container {
@@ -63,4 +90,102 @@ img {
     max-height: 100%; 
     object-fit: contain; 
     padding: 10px 20px;
+}
+
+/* contact button squish animation */
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* width: 100%;
+    height: 100%; */
+    filter: url('#filter');
+    z-index: 1;
+}
+#squish {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+#squish.fade {
+    opacity: 1;
+}
+.ball {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: calc(50% - 22.5px);
+    left: calc(50% - 22.5px);
+}
+.ball:before {
+    /* background: #0fd; */
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+.ball1:before {
+    background: #0fd;
+}
+.ball2:before {
+    background: #0fd;
+}
+.ball3:before {
+    background: yellow;
+}
+.ball:nth-child(1) {
+    transform: translate(-49.5px);
+    animation: x-axis-lateral 2s infinite alternate ease-in-out;
+}
+.ball:nth-child(1):before {
+    animation: y-axis-lateral 1s infinite 0.1s alternate ease-in-out;
+}
+.ball:nth-child(2) {
+    animation: x-axis 2s infinite alternate ease-in-out;
+}
+.ball:nth-child(2):before {
+    animation: y-axis 1s infinite 0.5s alternate ease-in-out;
+}
+.ball:nth-child(3) {
+    transform: translate(49.5px, 58.5px);
+    animation: x-axis-lateral 2s infinite alternate ease;
+}
+.ball:nth-child(3):before {
+    animation: y-axis-lateral 1s infinite 0.4s alternate ease-in-out;
+}
+@keyframes x-axis {
+    0% {
+        transform: translate(-72px);
+   }
+    100% {
+        transform: translate(72px);
+   }
+}
+@keyframes y-axis {
+    0% {
+        transform: translateY(31.5px);
+   }
+    100% {
+        transform: translateY(-49.5px) scale(0.8);
+        background: #00fffb;
+   }
+}
+@keyframes x-axis-lateral {
+    0% {
+        transform: translate(-27px);
+   }
+    100% {
+        transform: translate(27px);
+   }
+}
+@keyframes y-axis-lateral {
+    0% {
+        transform: translateY(9px);
+   }
+    100% {
+        transform: translateY(-45px);
+        background: #00fffb;
+   }
 }
