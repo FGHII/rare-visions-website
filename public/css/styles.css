@@ -9,12 +9,13 @@ h2 {
     text-align: center;
     color: white;
     font-family: 'Lato', sans-serif;
+    padding-bottom: 20px;
 }
 
 p {
     color: white;
     font-family: 'Roboto', sans-serif;
-    padding: 20px;
+    padding: 30px;
     margin: 0px;
 }
 
@@ -74,8 +75,27 @@ a > i:hover {
     background-color: black;
     padding: 50px 0px;
 }
-
-footer{
+.contact-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+input {
+    background-color: black;
+    border: 1.5px solid white;
+    padding: 10px;
+    color: white;
+    width: 400px;
+    margin-bottom: 15px;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}   
+footer {
     background-color: black;
     text-align: center;
     margin: 0;
@@ -89,7 +109,7 @@ img {
     max-width: 100%; 
     max-height: 100%; 
     object-fit: contain; 
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 
 /* contact button squish animation */
