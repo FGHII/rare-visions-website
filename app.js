@@ -20,9 +20,9 @@ app.get("/", function(req,res){
     res.render("index");
   });
   
-app.get("/:pageName", function(req,res){
-    res.render(req.params.pageName);
-    });
+// app.get("/:pageName", function(req,res){
+//     res.render(req.params.pageName);
+//     });
 
 const PORT = process.env.PORT || 3000;
 
