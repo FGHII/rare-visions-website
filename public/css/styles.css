@@ -22,10 +22,18 @@ p {
 i {
     color: white;
     padding: 10px;
+    font-size: 30px;
+}
+
+svg {
+    height: 100px;
 }
 
 .welcome-container {
-    background-color: blue;
+    background-image: url("../images/capture1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 50px 0px;
     display: flex;
     align-items: center;
@@ -33,15 +41,19 @@ i {
     flex-direction: column;
 }
 
+.welcome-title-container {
+    padding-top: 25px;
+}
+
 .contact-link-container {
     margin-top: 20px;
     position: relative;
 }
 a:hover {
-    color: red;
+    color: blue;
 }
 a > i:hover {
-    color: red;
+    color: blue;
 }
 .contact-link {
     font-family: 'Nunito', sans-serif;
