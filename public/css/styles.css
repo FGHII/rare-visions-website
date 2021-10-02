@@ -112,6 +112,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .contact-form {
     width: 80%;
@@ -120,7 +121,7 @@ label {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
-input {
+input, textarea {
     background-color: black;
     border: 1.5px solid white;
     padding: 10px;
@@ -128,6 +129,28 @@ input {
     width: 100%;
     margin-bottom: 15px;
 }
+
+div.submit-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+input#submit-button {
+    width: 150px;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#submit-button:hover {
+    color: blue;
+}
+
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }   
@@ -146,16 +169,23 @@ footer p {
 /* contact button squish animation */
 .wrapper {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     filter: url('#filter');
     z-index: 1;
 }
-#squish {
+#squish-contact {
     opacity: 0;
     transition: opacity 0.3s;
 }
-#squish.fade {
+#squish-contact.fade {
+    opacity: 1;
+}
+#squish-submit {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+#squish-submit.fade {
     opacity: 1;
 }
 .ball {

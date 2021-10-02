@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 
-app.get("/", function(req,res){
+app.get("/", (req,res) => {
     res.render("index");
   });
   
@@ -27,5 +27,5 @@ app.get("/", function(req,res){
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, function(){
-  console.log("Server started on port " + PORT);
+  console.log(`Server running on port ${PORT}`);
 });

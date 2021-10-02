@@ -2,6 +2,8 @@
 <body>
 <!-- Front Page -->
 <!-- just have navbar link to different sections on the same page -->
+
+
 <div class="welcome-container">
 <!-- background/image on the side: colorful lush projection, video if possible
 add scrolling parallax effect (2nd effect from this video https://www.youtube.com/watch?v=llv5kW4sz0U) -->
@@ -10,29 +12,22 @@ add scrolling parallax effect (2nd effect from this video https://www.youtube.co
 <h1>Handcrafted Liquid Light Projections</h1>
 </div>
 <div class="socials-container">
-    <a href="https://www.instagram.com/rarevisionsmilwaukee/"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/channel/UCa5pbYGx7G2IqioXvPzmstQ"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.facebook.com/rarevisionsmke"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/rarevisionslightshow/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/channel/UCPexAL8zt2e24-IwBahOyyA"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.facebook.com/rarevisionslightshow"><i class="fab fa-facebook-f"></i></a>
 </div>
 <div class="contact-link-container">
     <a id="contact-link" class="contact-link" href="#contact">Contact Us</a>
-    <div id="squish" class="wrapper">
-        <div class="ball ball1"></div>
-        <div class="ball ball2"></div>
-        <div class="ball ball3"></div>
-      </div>
-      
-      <svg>
-        <defs>
-          <filter id="filter">
-            <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
-            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
-            <feComposite in="SourceGraphic" in2="filter" operator="atop" />
-          </filter>
-        </defs>
-      </svg>
+    <div id="squish-contact" class="wrapper">
+      <div class="ball ball1"></div>
+      <div class="ball ball2"></div>
+      <div class="ball ball3"></div>
+    </div>
+    <%- include("partials/squishdiv") -%>
 </div>
 </div>
+
+
 <div class="about-container">
 <h1>Our Services</h1>
 <!-- background/image on the side: screengrab from Dahlapalooza, parallax scroll? -->
@@ -45,6 +40,8 @@ add scrolling parallax effect (2nd effect from this video https://www.youtube.co
 <!-- put image below about text for mobile, for desktop put on the side of the text -->
 <img src='/images/dahlapalooza1.png' alt='Band performing with Rare Visions projection'>
 </div>
+
+
 <div class="video-container">
 <!-- background/image: photo of glitchy liquids thru CRT tv, low opacity -->
 <h1>Videos</h1>
@@ -52,24 +49,34 @@ add scrolling parallax effect (2nd effect from this video https://www.youtube.co
 Start with liquids keyed over logo to slow reveal the logo (like the intro to The Thing) - slow subtle zoom in on logo
 Or just fade videos in and out with original audio? -->
 </div>
+
+
 <div id="contact" class="contact-container">
 <h1>Let's Talk!</h1>
 <h2>Book us for your next concert, event, or installation!</h2>
 <div class="contact-form-container">
     <form class="contact-form">
         <label>Name:</label><br>
-        <input type="text" placeholder="Name"><br>
+        <input type="text" id="name" placeholder="Name"><br>
         <label>Email:</label><br>
-        <input type="text" placeholder="Email"><br>
+        <input type="text" id="email" placeholder="Email"><br>
         <label>Event date:</label><br>
-        <input type="date"><br>
+        <input type="date" id="date"><br>
         <label>Leave a message:</label><br>
-        <input type="text" placeholder="Tell us more about the event!
-        Name of venue, which bands are playing, indoor or outdoor, etc.">
+        <textarea type="text" is="message" rows="3" placeholder="Tell us more about the event!  Name of venue, which bands are playing, indoor or outdoor, etc."></textarea><br>
+        <div class="submit-container">
+          <input type="submit" id="submit-button" value="Send Message">
+          <div id="squish-submit" class="wrapper">
+            <div class="ball ball1"></div>
+            <div class="ball ball2"></div>
+            <div class="ball ball3"></div>
+          </div>
+          <%- include("partials/squishdiv") -%>
+        </div>
     </form>
 </div>
 </div>
 <!-- events section - if no events schedule livestreams? -->
-<script src="/scripts/domscript.js"></script>
+<script src="/scripts/squishscript.js"></script>
 <%- include("partials/footer") -%>
     
