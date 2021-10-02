@@ -44,10 +44,10 @@ contactForm.addEventListener('submit', (e) => {
   xhr.onload = () => {
     console.log(xhr.responseText);
     if(xhr.responseText == 'success') {
-      alert('Email sent');
+      alert('Thank you for your message, will respond soon!');
       submitterName.value = '';
       email.value = '';
-      subject.value = '';
+      date.value = '';
       message.value = '';
     } else {
       alert('Error: email not sent');

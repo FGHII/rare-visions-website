@@ -172,6 +172,7 @@ input#submit-button {
 ::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }   
+
 footer {
     background-color: black;
     text-align: center;

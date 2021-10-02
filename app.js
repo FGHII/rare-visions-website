@@ -41,9 +41,8 @@ app.post('/', (req,res) => {
   const mailOptions = {
     from: req.body.email,
     to: 'rarevisionslightshow@gmail.com',
-    subject: `Website message from ${req.body.email}`,
-    text: `Event date: ${req.body.date}
-    Message: ${req.body.message}`
+    subject: `Website message from ${req.body.name}`,
+    text: `Email: ${req.body.email}\nEvent date: ${req.body.date}\nMessage: ${req.body.message}`
   }
 
   transporter.sendMail(mailOptions, (error, info) => {
