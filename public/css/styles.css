@@ -21,7 +21,7 @@ p {
 
 i {
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 30px;
 }
 
@@ -106,7 +106,7 @@ img {
 } */
 .contact-container {
     background-color: black;
-    padding: 50px 0px;
+    padding: 50px 10px;
 }
 .contact-form-container {
     display: flex;
@@ -115,7 +115,7 @@ img {
     flex-direction: column;
 }
 .contact-form {
-    width: 80%;
+    width: 85%;
 }
 label {
     font-family: 'Roboto', sans-serif;
