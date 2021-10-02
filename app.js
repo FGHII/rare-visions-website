@@ -28,6 +28,7 @@ app.get('/', (req,res) => {
 
 //gmail not accepting messages from nodemailer, have to setup OAUTH2 authentication
 //https://www.youtube.com/watch?v=-rcRf7yswfM
+//or app password with 2-step authentication
 app.post('/', (req,res) => {
   console.log(req.body);
   const transporter = nodemailer.createTransport({
