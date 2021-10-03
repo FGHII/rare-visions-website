@@ -3,7 +3,7 @@ h1 {
     color: white;
     font-family: 'Lato', sans-serif;
     padding-bottom: 20px;
-    width: 100%;
+    width: 90%;
 }
 
 h2 {
@@ -30,6 +30,11 @@ svg {
     height: 100px;
 }
 
+@font-face {
+    font-family: 'rvLogo';
+    src: url(../fonts/Flames-LWzG.ttf);
+}
+
 .welcome-container {
     background-image: url("../images/capture1.png");
     background-position: center;
@@ -42,8 +47,23 @@ svg {
     flex-direction: column;
 }
 
+#logo {
+    font-family: 'rvLogo', 'Lato', sans-serif;
+    font-size: 60px;
+    letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+
+}
+
+
 .welcome-title-container {
     padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contact-link-container {
@@ -85,6 +105,12 @@ a > i:hover {
 }
 
 @media (min-width: 768px) {
+    h1 {
+        width: 100%;
+    }
+    #logo {
+        font-size: 100px;
+    }
     .about-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -104,6 +130,10 @@ a > i:hover {
 .video-container {
     background-color: black;
     padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 img {
     max-width: 100%; 
@@ -125,15 +155,20 @@ img {
 .contact-container {
     background-color: black;
     padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .contact-form-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 .contact-form {
-    width: 85%;
+    width: 80%;
 }
 label {
     font-family: 'Roboto', sans-serif;
