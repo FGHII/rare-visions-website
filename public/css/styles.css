@@ -53,11 +53,6 @@ svg {
     letter-spacing: 0.05em;
 }
 
-@media (min-width: 768px) {
-
-}
-
-
 .welcome-title-container {
     padding-top: 25px;
     display: flex;
@@ -76,6 +71,11 @@ a:hover {
 a > i:hover {
     color: blue;
 }
+
+@media (hover: none) {
+    a:hover { color: inherit; }
+  }
+  
 .contact-link {
     font-family: 'Nunito', sans-serif;
     color: white;
