@@ -37,22 +37,21 @@ contactForm.addEventListener('submit', (e) => {
     date: date.value,
     message: message.value
   }
-  //disabling until namecheap SSL setup
-  // let xhr = new XMLHttpRequest();
-  // xhr.open('POST', '/');
-  // xhr.setRequestHeader('content-type', 'application/json');
-  // xhr.onload = () => {
-  //   console.log(xhr.responseText);
-  //   if(xhr.responseText == 'success') {
-  //     alert('Thank you for your message, will respond soon!');
-  //     submitterName.value = '';
-  //     email.value = '';
-  //     date.value = '';
-  //     message.value = '';
-  //   } else {
-  //     alert('Error: email not sent');
-  //   }
-  // }
-  // xhr.send(JSON.stringify(formData));
+
+  let xhr = new XMLHttpRequest();
+  xhr.open('POST', '/');
+  xhr.setRequestHeader('content-type', 'application/json');
+  xhr.onload = () => {
+    if(xhr.responseText == 'success') {
+      alert('Thank you for your message, will respond soon!');
+      submitterName.value = '';
+      email.value = '';
+      date.value = '';
+      message.value = '';
+    } else {
+      alert('Error: email not sent');
+    }
+  }
+  xhr.send(JSON.stringify(formData));
 
 });
