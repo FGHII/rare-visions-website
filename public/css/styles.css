@@ -139,7 +139,7 @@ a > i:hover {
 
 .embed-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%; /*16:9, or 9 divided by 16 */
     height: 0;
     width: 100%;
 }

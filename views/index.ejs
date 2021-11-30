@@ -1,77 +1,109 @@
 <%- include("partials/header") -%>
 <body>
-<!-- Front Page -->
-<!-- just have navbar link to different sections on the same page -->
+  <!-- Front Page -->
+  <!-- just have navbar link to different sections on the same page -->
 
-
-<div class="welcome-container">
-<!-- background/image on the side: colorful lush projection, video if possible
+  <div class="welcome-container">
+    <!-- background/image on the side: colorful lush projection, video if possible
 add scrolling parallax effect (1st effect from this video https://www.youtube.com/watch?v=llv5kW4sz0U) -->
-<div class="welcome-title-container">
-<h1 id="logo">Rare Visions</h1>
-<h1>Handcrafted Liquid Light Projections</h1>
-</div>
-<div class="socials-container">
-    <a href="https://www.instagram.com/rarevisionslightshow/"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/channel/UCPexAL8zt2e24-IwBahOyyA"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.facebook.com/rarevisionslightshow"><i class="fab fa-facebook-f"></i></a>
-</div>
-<div class="contact-link-container">
-    <a id="contact-link" class="contact-link" href="#contact">Contact Us</a>
-    <div id="squish-contact" class="wrapper">
-      <div class="ball ball1"></div>
-      <div class="ball ball2"></div>
-      <div class="ball ball3"></div>
+    <div class="welcome-title-container">
+      <h1 id="logo">Rare Visions</h1>
+      <h1>Handcrafted Liquid Light Projections</h1>
     </div>
-    <%- include("partials/squishdiv") -%>
-</div>
-<a href="#about"><i class="fas fa-chevron-circle-down"></i></a>
-</div>
-
-
-<div id="about" class="about-container">
-<h1>Our Services</h1>
-<!-- background/image on the side: screengrab from Dahlapalooza, parallax scroll? -->
-<p class="about-text">Rare Visions provides an immersive light show rooted in analog liquid light
-    projections from the 1960s and infused with
-    modern visual aesthetics such as glitch art and video synthesis.  Projections are
-    improvised live in response to music and the surrounding environment, producing a 
-    unique and hypnotic psychedelic backdrop to concerts and events.
-</p>
-<!-- add gallery view for several images?  see www.howlstreetrecordings.com -->
-<!-- embed instagram feed? -->
-<img class="about-image" src='/images/dahlapalooza1.png' alt='Band performing with Rare Visions projection'>
-</div>
-
-
-<div class="video-container">
-<!-- background/image: photo of glitchy liquids thru CRT tv, low opacity -->
-<h1>Video</h1>
-<div class="embed-container">
-  <iframe class="embed-responsive-item" width="560" height="349" src="https://www.youtube.com/embed/Q6qvowBS3-o" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    <div class="socials-container">
+      <a href="https://www.instagram.com/rarevisionslightshow/"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a href="https://www.youtube.com/channel/UCPexAL8zt2e24-IwBahOyyA"
+        ><i class="fab fa-youtube"></i
+      ></a>
+      <a href="https://www.facebook.com/rarevisionslightshow"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+    </div>
+    <div class="contact-link-container">
+      <a id="contact-link" class="contact-link" href="#contact">Contact Us</a>
+      <div id="squish-contact" class="wrapper">
+        <div class="ball ball1"></div>
+        <div class="ball ball2"></div>
+        <div class="ball ball3"></div>
+      </div>
+      <%- include("partials/squishdiv") -%>
+    </div>
+    <a href="#about"><i class="fas fa-chevron-circle-down"></i></a>
   </div>
-<!-- video compilation of dahlapalooza clips set to Elastic Minute with logo?  
-Start with liquids keyed over logo to slow reveal the logo (like the intro to The Thing) - slow subtle zoom in on logo
-Or just fade videos in and out with original audio?
-cool css animation to use in videos maybe: https://css-tricks.com/newsletter/207-psychedelic-css-eleventy-and-a-quick-guide-to-emotion/ -->
-</div>
 
-<div id="contact" class="contact-container">
-<h1>Let's Talk!</h1>
-<h2>Book us for your next concert, wedding, art installation or other event!</h2>
-<h2>Also open to music video requests. </h2>
-<div class="contact-form-container">
-    <form class="contact-form">
-        <label>Name:</label><br>
-        <input type="text" id="name" placeholder="Name"><br>
-        <label>Email:</label><br>
-        <input type="text" id="email" placeholder="Email"><br>
-        <label>Event date:</label><br>
-        <input type="date" id="date"><br>
-        <label>Leave a message:</label><br>
-        <textarea type="text" id="message" rows="3" placeholder="Tell us more about the event!  Name of venue, which bands are playing, indoor or outdoor, etc."></textarea><br>
+  <div id="about" class="about-container">
+    <h1>Our Services</h1>
+    <!-- background/image on the side: screengrab from Dahlapalooza, parallax scroll? -->
+    <p class="about-text">
+      Rare Visions provides an immersive light show rooted in analog liquid
+      light projections from the 1960s and infused with modern visual aesthetics
+      such as glitch art and video synthesis. Projections are improvised live in
+      response to music and the surrounding environment, producing a unique and
+      hypnotic psychedelic backdrop to concerts and events.
+    </p>
+    <!-- add gallery view for several images?  see www.howlstreetrecordings.com -->
+    <!-- embed instagram feed? -->
+    <img
+      class="about-image"
+      src="/images/dahlapalooza1.png"
+      alt="Band performing with Rare Visions projection"
+    />
+  </div>
+
+  <div class="video-container">
+    <!-- background/image: photo of glitchy liquids thru CRT tv, low opacity -->
+    <h1>Video</h1>
+    <div class="embed-container">
+      <iframe
+        class="embed-responsive-item"
+        width="560"
+        height="349"
+        src="https://www.youtube.com/embed/Q6qvowBS3-o"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="embed-container">
+    <iframe
+    class="embed-responsive-item"
+    width="560"
+    height="349"
+    src="https://www.youtube.com/watch?v=G4OcQPMRrbw"
+    title="YouTube video player"
+    frameborder="0"
+    allowfullscreen
+  ></iframe>
+</div>
+    <!-- cool css animation to use in videos maybe: https://css-tricks.com/newsletter/207-psychedelic-css-eleventy-and-a-quick-guide-to-emotion/ -->
+  </div>
+
+  <div id="contact" class="contact-container">
+    <h1>Let's Talk!</h1>
+    <h2>
+      Book us for your next concert, wedding, art installation or other event!
+    </h2>
+    <h2>Also open to music video requests.</h2>
+    <div class="contact-form-container">
+      <form class="contact-form">
+        <label>Name:</label><br />
+        <input type="text" id="name" placeholder="Name" /><br />
+        <label>Email:</label><br />
+        <input type="text" id="email" placeholder="Email" /><br />
+        <label>Event date:</label><br />
+        <input type="date" id="date" /><br />
+        <label>Leave a message:</label><br />
+        <textarea
+          type="text"
+          id="message"
+          rows="3"
+          placeholder="Tell us more about the event!  Name of venue, which bands are playing, indoor or outdoor, etc."
+        ></textarea
+        ><br />
         <div class="submit-container">
-          <input type="submit" id="submit-button" value="Send Message">
+          <input type="submit" id="submit-button" value="Send Message" />
           <div id="squish-submit" class="wrapper">
             <div class="ball ball1"></div>
             <div class="ball ball2"></div>
@@ -79,10 +111,10 @@ cool css animation to use in videos maybe: https://css-tricks.com/newsletter/207
           </div>
           <%- include("partials/squishdiv") -%>
         </div>
-    </form>
-</div>
-</div>
-<!-- events section - if no events schedule livestreams? -->
-<script src="/scripts/script.js"></script>
-<%- include("partials/footer") -%>
-    
+      </form>
+    </div>
+  </div>
+  <!-- events section - if no events schedule livestreams? -->
+  <script src="/scripts/script.js"></script>
+  <%- include("partials/footer") -%>
+</body>
