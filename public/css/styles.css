@@ -4,6 +4,7 @@ h1 {
     font-family: 'Lato', sans-serif;
     padding-bottom: 20px;
     width: 90%;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.7);
 }
 
 h2 {
@@ -37,7 +38,7 @@ svg {
 }
 
 .welcome-container {
-    background-image: url("../images/capture1.png");
+    background-image: url("../images/OPscreenshot2.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
